@@ -131,7 +131,7 @@ function App() {
     link.click();
   };
 
-  const eventDate = new Date('2025-06-15T18:00:00');
+  const eventDate = new Date('2025-12-31T18:00:00'); // UPDATE THIS DATE
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -158,7 +158,10 @@ function App() {
         <div className="hero-content">
           <h1 className="hero-title">60 Years of Grace</h1>
           <p className="hero-subtitle">Celebrating a Life Well Lived</p>
-          <div className="hero-date">June 15, 2025</div>
+          <div className="hero-date">December 31, 2025</div>
+          <p style={{fontSize: '0.85rem', color: 'rgba(212, 175, 55, 0.8)', marginTop: '0.5rem'}}>
+            💡 Update title, subtitle & date in App.jsx (Hero Section)
+          </p>
           {!user && (
             <button className="cta-button" onClick={() => setShowAuth(true)}>
               RSVP Now
@@ -201,6 +204,10 @@ function App() {
               <div className="image-placeholder">
                 <FaHeart size={60} />
                 <p>Add Dad's Photo Here</p>
+                <p style={{fontSize: '0.9rem', marginTop: '1rem', color: 'rgba(255,255,255,0.8)'}}>Replace this placeholder in App.jsx</p>
+                {/* TO ADD PHOTO: Place image in frontend/public/ folder */}
+                {/* Then replace this div with: */}
+                {/* <img src="/dad-photo.jpg" alt="Dad" style={{width: '100%', maxWidth: '400px', borderRadius: '20px'}} /> */}
               </div>
             </div>
             <div className="about-text">
@@ -211,6 +218,9 @@ function App() {
               <p>
                 Join us as we celebrate this milestone with stories, laughter, 
                 and gratitude for all the beautiful memories we've shared.
+              </p>
+              <p style={{fontSize: '0.9rem', color: '#999', marginTop: '1rem', fontStyle: 'italic'}}>
+                💡 Update this text in frontend/src/App.jsx (About Section)
               </p>
             </div>
           </div>
@@ -225,21 +235,27 @@ function App() {
             <div className="detail-card">
               <FaCalendar size={40} />
               <h3>Date</h3>
-              <p>Saturday, June 15, 2025</p>
+              <p>Saturday, December 31, 2025</p>
+              <p className="venue-address">UPDATE THIS DATE</p>
             </div>
             <div className="detail-card">
               <FaClock size={40} />
               <h3>Time</h3>
               <p>6:00 PM - 11:00 PM</p>
+              <p className="venue-address">UPDATE THIS TIME</p>
             </div>
             <div className="detail-card">
               <FaMapMarkerAlt size={40} />
               <h3>Venue</h3>
               <p>Grand Celebration Hall</p>
               <p className="venue-address">123 Memory Lane, City</p>
+              <p className="venue-address" style={{fontSize: '0.8rem', color: '#999'}}>UPDATE THIS VENUE</p>
             </div>
           </div>
           <div className="map-container">
+            {/* UPDATE GOOGLE MAPS LOCATION */}
+            {/* Get embed code from: https://www.google.com/maps */}
+            {/* Search your venue → Share → Embed a map → Copy HTML */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.98!3d40.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzAwLjAiTiA3M8KwNTgnNDguMCJX!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
@@ -247,7 +263,11 @@ function App() {
               style={{ border: 0, borderRadius: '10px' }}
               allowFullScreen=""
               loading="lazy"
+              title="Event Location"
             ></iframe>
+            <p style={{textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem', color: '#999'}}>
+              💡 Update this map with your actual venue location
+            </p>
           </div>
         </div>
       </section>
@@ -485,6 +505,9 @@ function App() {
         <div className="container">
           <p>With love from the family</p>
           <p>For inquiries: contact@celebration.com | +1 (555) 123-4567</p>
+          <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+            💡 Update contact info in App.jsx (Footer Section)
+          </p>
           <p className="footer-note">© 2025 60th Birthday Celebration</p>
         </div>
       </footer>

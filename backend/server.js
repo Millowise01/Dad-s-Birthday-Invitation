@@ -10,7 +10,29 @@ import { User, RSVP, Table, Memory } from './models.js';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+// CORS Configuration - Allow access from network devices
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://192.168.0.100:5173',
+  'http://172.30.16.1:5173',
+  'http://172.31.176.1:5173',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
+app.use(cors({
+  origin: function(origin, callback) {
+    // Allow requests with no origin (mobile apps, Postman, etc.)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(null, true); // Allow all origins in development
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 // MongoDB Connection

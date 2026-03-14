@@ -58,6 +58,15 @@ A modern, elegant web application for managing birthday celebration invitations,
 
 ## 🚀 Installation & Setup
 
+### Quick Start (Windows)
+
+**Easiest Method:**
+1. Double-click `START.bat` in the project folder
+2. Wait for servers to start
+3. Open http://localhost:5173
+
+**Manual Method:**
+
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
@@ -135,6 +144,17 @@ The application will be available at:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5000
 
+## 📚 Documentation
+
+- **[GETTING_STARTED.md](GETTING_STARTED.md)** - Quick start guide
+- **[CUSTOMIZATION.md](CUSTOMIZATION.md)** - How to customize everything
+- **[CHECKLIST.md](CHECKLIST.md)** - Pre-launch checklist
+- **[QUICKSTART.md](QUICKSTART.md)** - Detailed setup guide
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Deploy to production
+- **[API.md](API.md)** - Complete API reference
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Fix common issues
+- **[SUMMARY.md](SUMMARY.md)** - Project overview
+
 ## 👤 Default Admin Credentials
 
 ```
@@ -198,6 +218,10 @@ Dad-s-Birthday-Invitation/
 - `POST /api/tables` - Create table (admin)
 
 ## 🎨 Customization
+
+### Quick Customization Guide
+
+See [CUSTOMIZATION.md](CUSTOMIZATION.md) for detailed instructions.
 
 ### Event Details
 Edit `frontend/src/App.jsx`:
