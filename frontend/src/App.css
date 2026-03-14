@@ -5,18 +5,19 @@
 }
 
 :root {
-  --gold: #d4af37;
-  --dark-gold: #b8941f;
-  --black: #1a1a1a;
-  --white: #ffffff;
-  --gray: #f5f5f5;
-  --dark-gray: #333;
+  --gold: #87CEEB;        /* Sky blue (primary color) */
+  --dark-gold: #4A90E2;   /* Darker sky blue for hover */
+  --black: #000000;       /* Pure black for text */
+  --white: #ffffff;       /* White background */
+  --gray: #f8f9fa;        /* Very light gray */
+  --dark-gray: #333333;   /* Dark gray for secondary text */
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--dark-gray);
+  color: #000000;           /* Black text */
+  background-color: #ffffff; /* White background */
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -32,13 +33,13 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+  background: linear-gradient(135deg, #87CEEB 0%, #4A90E2 100%); /* Sky blue gradient */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--white);
+  color: #000000;  /* Black text */
   overflow: hidden;
 }
 
@@ -49,7 +50,7 @@ h1, h2, h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23d4af37" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.3" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
   background-size: cover;
   animation: wave 10s ease-in-out infinite;
 }
@@ -80,53 +81,55 @@ h1, h2, h3 {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--gold);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #000000;  /* Black text */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .hero-subtitle {
   font-size: 1.8rem;
   margin-bottom: 2rem;
   font-weight: 300;
+  color: #000000;  /* Black text */
 }
 
 .hero-date {
   font-size: 1.5rem;
-  color: var(--gold);
+  color: #000000;  /* Black text */
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
 .cta-button {
-  background: var(--gold);
-  color: var(--black);
-  border: none;
+  background: #ffffff;     /* White button */
+  color: #000000;          /* Black text */
+  border: 2px solid #000000;
   padding: 1rem 3rem;
   font-size: 1.2rem;
   font-weight: 600;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
-  background: var(--dark-gold);
+  background: #000000;     /* Black on hover */
+  color: #ffffff;          /* White text on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Countdown */
 .countdown {
   padding: 4rem 2rem;
-  background: var(--gray);
+  background: #ffffff;  /* White background */
   text-align: center;
 }
 
 .countdown h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .countdown-grid {
@@ -138,23 +141,24 @@ h1, h2, h3 {
 }
 
 .countdown-item {
-  background: var(--white);
+  background: #f8f9fa;  /* Very light gray */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px var(--shadow);
+  border: 2px solid #87CEEB;  /* Sky blue border */
 }
 
 .countdown-number {
   display: block;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--gold);
+  color: #87CEEB;  /* Sky blue */
 }
 
 .countdown-label {
   display: block;
   font-size: 1rem;
-  color: var(--dark-gray);
+  color: #000000;  /* Black text */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -169,14 +173,14 @@ h1, h2, h3 {
 /* About Section */
 .about {
   padding: 6rem 2rem;
-  background: var(--white);
+  background: #ffffff;  /* White background */
 }
 
 .about h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .about-content {
@@ -194,34 +198,36 @@ h1, h2, h3 {
   width: 100%;
   max-width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  background: linear-gradient(135deg, #87CEEB 0%, #4A90E2 100%);  /* Sky blue gradient */
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: #000000;  /* Black text */
   margin: 0 auto;
   box-shadow: 0 10px 30px var(--shadow);
+  border: 3px solid #ffffff;
 }
 
 .about-text p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.8;
+  color: #000000;  /* Black text */
 }
 
 /* Event Details */
 .event-details {
   padding: 6rem 2rem;
-  background: var(--gray);
+  background: #f8f9fa;  /* Very light gray */
 }
 
 .event-details h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .details-grid {

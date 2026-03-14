@@ -158,7 +158,7 @@ function App() {
         <div className="hero-content">
           <h1 className="hero-title">60 Years of Grace</h1>
           <p className="hero-subtitle">Celebrating a Life Well Lived</p>
-          <div className="hero-date">December 31, 2025</div>
+          <div className="hero-date">April 27th, 2026</div>
           <p style={{fontSize: '0.85rem', color: 'rgba(212, 175, 55, 0.8)', marginTop: '0.5rem'}}>
             💡 Update title, subtitle & date in App.jsx (Hero Section)
           </p>
@@ -235,7 +235,7 @@ function App() {
             <div className="detail-card">
               <FaCalendar size={40} />
               <h3>Date</h3>
-              <p>Saturday, December 31, 2025</p>
+              <p>Saturday, April 27th, 2026</p>
               <p className="venue-address">UPDATE THIS DATE</p>
             </div>
             <div className="detail-card">
@@ -247,8 +247,8 @@ function App() {
             <div className="detail-card">
               <FaMapMarkerAlt size={40} />
               <h3>Venue</h3>
-              <p>Grand Celebration Hall</p>
-              <p className="venue-address">123 Memory Lane, City</p>
+              <p>29 Yayah Lane. </p>
+              <p className="venue-address">Kossoh Town</p>
               <p className="venue-address" style={{fontSize: '0.8rem', color: '#999'}}>UPDATE THIS VENUE</p>
             </div>
           </div>
