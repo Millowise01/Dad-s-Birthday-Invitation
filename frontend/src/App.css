@@ -238,32 +238,34 @@ h1, h2, h3 {
 }
 
 .detail-card {
-  background: var(--white);
+  background: #ffffff;  /* White background */
   padding: 3rem 2rem;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 15px var(--shadow);
   transition: transform 0.3s ease;
+  border: 2px solid #87CEEB;  /* Sky blue border */
 }
 
 .detail-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(135, 206, 235, 0.3);
 }
 
 .detail-card svg {
-  color: var(--gold);
+  color: #87CEEB;  /* Sky blue icons */
   margin-bottom: 1rem;
 }
 
 .detail-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .detail-card p {
   font-size: 1.1rem;
-  color: var(--dark-gray);
+  color: #000000;  /* Black text */
 }
 
 .venue-address {
@@ -353,13 +355,13 @@ h1, h2, h3 {
 
 .modal input:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: #87CEEB;  /* Sky blue focus */
 }
 
 .submit-button {
-  background: var(--gold);
-  color: var(--black);
-  border: none;
+  background: #87CEEB;  /* Sky blue */
+  color: #000000;       /* Black text */
+  border: 2px solid #000000;
   padding: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -370,8 +372,9 @@ h1, h2, h3 {
 }
 
 .submit-button:hover {
-  background: var(--dark-gold);
+  background: #4A90E2;  /* Darker sky blue */
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(135, 206, 235, 0.4);
 }
 
 .auth-toggle {
@@ -383,7 +386,7 @@ h1, h2, h3 {
 .auth-toggle button {
   background: none;
   border: none;
-  color: var(--gold);
+  color: #87CEEB;  /* Sky blue */
   font-weight: 600;
   cursor: pointer;
   margin-left: 0.5rem;
@@ -393,7 +396,7 @@ h1, h2, h3 {
 /* Dashboard */
 .dashboard, .admin-dashboard {
   padding: 6rem 2rem;
-  background: var(--white);
+  background: #ffffff;  /* White background */
   min-height: 100vh;
 }
 
@@ -401,7 +404,7 @@ h1, h2, h3 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .dashboard-grid {
@@ -412,16 +415,17 @@ h1, h2, h3 {
 }
 
 .dashboard-card {
-  background: var(--gray);
+  background: #f8f9fa;  /* Very light gray */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px var(--shadow);
+  border: 2px solid #87CEEB;  /* Sky blue border */
 }
 
 .dashboard-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .rsvp-status p {
@@ -440,9 +444,9 @@ h1, h2, h3 {
 }
 
 .download-button {
-  background: var(--gold);
-  color: var(--black);
-  border: none;
+  background: #87CEEB;  /* Sky blue */
+  color: #000000;       /* Black text */
+  border: 2px solid #000000;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
   cursor: pointer;
@@ -452,21 +456,23 @@ h1, h2, h3 {
 }
 
 .download-button:hover {
-  background: var(--dark-gold);
+  background: #4A90E2;  /* Darker sky blue */
+  transform: translateY(-2px);
 }
 
 /* RSVP Form */
 .rsvp-form-section {
-  background: var(--gray);
+  background: #f8f9fa;  /* Very light gray */
   padding: 3rem;
   border-radius: 15px;
   margin-bottom: 2rem;
+  border: 2px solid #87CEEB;  /* Sky blue border */
 }
 
 .rsvp-form-section h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .rsvp-form {
@@ -503,7 +509,7 @@ h1, h2, h3 {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: #87CEEB;  /* Sky blue focus */
 }
 
 /* Admin Stats */
@@ -515,12 +521,12 @@ h1, h2, h3 {
 }
 
 .stat-card {
-  background: var(--white);
+  background: #ffffff;  /* White background */
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 15px var(--shadow);
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid #87CEEB;  /* Sky blue accent */
 }
 
 .stat-card.confirmed {
@@ -536,18 +542,18 @@ h1, h2, h3 {
 }
 
 .stat-card svg {
-  color: var(--gold);
+  color: #87CEEB;  /* Sky blue */
   margin-bottom: 1rem;
 }
 
 .stat-card h3 {
   font-size: 2.5rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
   margin-bottom: 0.5rem;
 }
 
 .stat-card p {
-  color: var(--dark-gray);
+  color: #000000;  /* Black text */
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -555,16 +561,17 @@ h1, h2, h3 {
 
 /* Guest List */
 .guest-list {
-  background: var(--gray);
+  background: #f8f9fa;  /* Very light gray */
   padding: 2rem;
   border-radius: 15px;
   margin-bottom: 2rem;
+  border: 2px solid #87CEEB;  /* Sky blue border */
 }
 
 .guest-list h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .table-responsive {
@@ -580,8 +587,8 @@ table {
 }
 
 thead {
-  background: var(--black);
-  color: var(--white);
+  background: #87CEEB;  /* Sky blue header */
+  color: #000000;       /* Black text */
 }
 
 th, td {
@@ -638,20 +645,20 @@ tbody tr:hover {
 /* Memory Wall */
 .memory-wall {
   padding: 6rem 2rem;
-  background: var(--white);
+  background: #ffffff;  /* White background */
 }
 
 .memory-wall h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: #000000;  /* Black text */
 }
 
 .section-subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: var(--dark-gray);
+  color: #000000;  /* Black text */
   margin-bottom: 3rem;
 }
 
@@ -673,7 +680,7 @@ tbody tr:hover {
 
 .memory-form textarea:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: #87CEEB;  /* Sky blue focus */
 }
 
 .memories-grid {
@@ -683,47 +690,49 @@ tbody tr:hover {
 }
 
 .memory-card {
-  background: var(--gray);
+  background: #f8f9fa;  /* Very light gray */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px var(--shadow);
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid #87CEEB;  /* Sky blue accent */
   transition: transform 0.3s ease;
 }
 
 .memory-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(135, 206, 235, 0.3);
 }
 
 .memory-content {
   font-style: italic;
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: var(--dark-gray);
+  color: #000000;  /* Black text */
 }
 
 .memory-author {
   text-align: right;
   font-weight: 600;
-  color: var(--gold);
+  color: #87CEEB;  /* Sky blue */
 }
 
 /* Footer */
 .footer {
-  background: var(--black);
-  color: var(--white);
+  background: #000000;  /* Black background */
+  color: #ffffff;       /* White text */
   padding: 3rem 2rem;
   text-align: center;
 }
 
 .footer p {
   margin-bottom: 0.5rem;
+  color: #ffffff;  /* White text */
 }
 
 .footer-note {
   margin-top: 2rem;
   font-size: 0.9rem;
-  color: #999;
+  color: #87CEEB;  /* Sky blue */
 }
 
 /* Logout Button */

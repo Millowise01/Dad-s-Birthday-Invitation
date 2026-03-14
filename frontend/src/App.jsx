@@ -159,7 +159,7 @@ function App() {
           <h1 className="hero-title">60 Years of Grace</h1>
           <p className="hero-subtitle">Celebrating a Life Well Lived</p>
           <div className="hero-date">April 27th, 2026</div>
-          <p style={{fontSize: '0.85rem', color: 'rgba(212, 175, 55, 0.8)', marginTop: '0.5rem'}}>
+          <p style={{fontSize: '0.85rem', color: 'rgba(0, 0, 0, 0.7)', marginTop: '0.5rem'}}>
             💡 Update title, subtitle & date in App.jsx (Hero Section)
           </p>
           {!user && (
